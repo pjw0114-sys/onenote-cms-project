@@ -4,6 +4,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 @AGENTS.md
 
+# Project Context
+- PRD 문서: @docs/PRD.md
+- 개발 로드맵: @docs/ROADMAP.md
+
 ## 이 저장소에서 반드시 지켜야 할 것
 
 이 프로젝트는 `package.json`에 명시된 대로 `next@^16.2.11`, `react@^19.2.4`, `tailwindcss@^4`, `zod@^4` 등 최신/비표준 메이저 버전을 사용한다. 학습 데이터의 관례와 실제 API가 다를 수 있으므로, 코드를 작성하기 전에 반드시 `node_modules/next/dist/docs/`(App Router 문서) 및 해당 패키지의 타입 선언을 확인한다. 이 확인 절차는 `/breaking-check [확인할 API 또는 작업 설명]` 커맨드로 실행할 수 있다 — 새 API를 쓰기 전에 먼저 호출한다.
